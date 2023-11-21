@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <title>try some</title>
+  </head>
+  <body>
+
+
+<div>
+    <button>Hover</button>
+    <div class="hello">Hellow
+    </div>
+</div>
+
+
+<style>
+    div{
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    div button{
+        color: green;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 20px 30px;
+        background-color: yellow;
+        border: 2px solid green;
+        border-radius: 9px;
+        transition: all 0.3s;
+    }
+
+    div button:hover{
+        transform: translateY(-9px);
+        background-color: green;
+        color: yellow;
+    }
+
+@keyframes trySome {
+    from {
+        transform: translateX(-90px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.hello{
+    animation: trySome 2s ease-in; 
+}
+
+</style>
+  </body>
+</html>

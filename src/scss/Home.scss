@@ -1,0 +1,15 @@
+@import 'Helpers';
+
+
+section{
+    color: white;
+    background-color: $black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+
+    img{
+        height: auto;
+        width: 8rem;
+    }
+}

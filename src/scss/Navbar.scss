@@ -1,0 +1,125 @@
+@import 'Helpers';
+
+*{
+    font-family: $contentStyle;
+    margin: 0;
+    padding: 0;
+}
+.headerTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:$border;
+    padding: $padding;
+
+
+    p{
+      color: rgba(99, 99, 99, 0.795);
+    }
+
+    img{
+      height: 2.5rem;
+      width: auto;
+      margin-left: -2rem;
+    }
+
+    div{
+
+      a:nth-child(2){
+        margin-left: 0.8rem;
+      }
+       a:nth-child(3){
+        margin-left: 0.8rem;
+      }
+    }
+}
+
+nav{
+  border-bottom: $border;
+  font-size: 1rem;
+
+  div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 34rem;
+    margin: auto;
+    padding: 1rem 0;
+  
+
+
+    a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $titleStyle;
+    letter-spacing: 0.1rem;
+    color: $black;
+
+    &:hover{
+      color: $brown;
+    }
+  }
+  }
+
+}
+
+
+@media (max-width:768px){
+  *{
+    font-size: 0.875rem;
+  }
+  .headerTop{
+    p{
+      text-wrap:wrap;
+    }
+    img{
+      height: 2rem;
+    }
+
+    div{
+       a:nth-child(2){
+        margin-left: 0.4rem;
+      }
+       a:nth-child(3){
+        margin-left: 0.4rem;
+      }
+    }
+  }
+  nav{
+    div{
+      width: 28rem;
+
+    }
+  }
+}
+
+
+@media (max-width:520px){
+    *{
+    font-size: $fontSmall;
+    }
+  .headerTop{
+    padding: 1rem 0;
+
+    img{
+      height: 1.75rem;
+      margin-left: -1rem;
+    }
+    div{
+        a{
+          height: $fontSmall;
+          width: $fontSmall;
+        }
+    }
+    
+  }
+
+
+  nav{
+    div{
+      width: auto;
+      padding-left: $fontLarge;
+      padding-right:$fontLarge;
+    }
+  }
+}
