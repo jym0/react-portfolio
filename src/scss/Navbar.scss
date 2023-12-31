@@ -13,18 +13,22 @@
     padding: $padding;
 
 
+
     p{
-      color: rgba(99, 99, 99, 0.795);
+      color: $textGray;
     }
 
     img{
       height: 2.5rem;
       width: auto;
       margin-left: -2rem;
+
     }
 
     div{
-
+a{
+  color: $black;
+}
       a:nth-child(2){
         margin-left: 0.8rem;
       }
@@ -46,14 +50,16 @@ nav{
     margin: auto;
     padding: 1rem 0;
   
+  
 
 
     a{
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform:capitalize;
     font-family: $titleStyle;
-    letter-spacing: 0.1rem;
-    color: $black;
+    letter-spacing: $letterSpace;
+    color: black;
+    transition: 0.5s;
 
     &:hover{
       color: $brown;

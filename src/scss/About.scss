@@ -1,0 +1,180 @@
+@import 'Helpers';
+
+.about{
+    padding: 0 2rem;
+    .title{
+        .title_text{
+        font-size: 2rem;
+        text-transform:lowercase;
+        font-family: $contentStyle;
+        color: $gray;
+
+        span{
+            font-size: 3rem;
+            letter-spacing: 0;
+        }
+    }
+}
+.myName_container{
+    p{
+        display: flex;
+        align-items: center;
+        font-family: $titleStyle;
+        font-size: 6rem;
+        font-weight:900;
+        margin-bottom: 4rem;
+        span{
+            flex: 1;
+  height: 0.2rem;
+  background-color: $black;
+  margin: 0 2rem; 
+        }
+
+        u{
+            text-decoration: none;
+            color: $brown;
+            margin-left: 2rem;
+        }
+        u:nth-child(1){
+            position: relative;
+
+            svg{
+                width: 24rem;
+                fill: $gray;
+                opacity: 0.3;
+                position: absolute;
+                right: -2rem;
+                top: 0;
+                z-index: -2;
+
+            }
+        }
+    }
+    p:nth-child(2){
+        margin: 0 14rem 0 6rem;
+    }
+    p:nth-child(3){
+        margin-left: 8rem;
+        margin-right: 2rem;
+
+        strong{
+            font-family: inherit;
+            height: fit-content;
+            position: relative;
+
+            span{
+                background-color: $black;
+                position: absolute;
+                left: -1.8rem;
+                top: 5.7rem;
+                height: 80vh;
+                width: 0.2rem;
+                z-index: -2;
+
+
+            }
+        }
+    }
+}
+
+    .mySelf_container{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        place-items: center;
+
+        .div_figure{
+           
+ figure{
+            width: fit-content;
+            height: 100%;
+            background-color: $textGray;
+            margin-top: 16rem;
+            border-top-right-radius: 8rem;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            position: relative;
+            
+            
+            img{
+                width: auto;
+                height: 22rem;
+                margin-top: -8rem;
+                z-index: -2;
+            }
+            
+        figcaption{
+                width:initial;
+                background-color: $maroon;
+                color: white;
+                padding: 1rem 2rem 1rem 4rem;
+                line-height: 1.5;
+                margin-top: -6px;
+                position: relative;
+                z-index: 6;
+
+                h4{
+                    text-transform: capitalize;
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                    font-family: $titleStyle;
+                }
+
+                .badgeIcon{
+                    color: $black;
+                    rotate: 15deg;
+                    position: absolute;
+                    bottom: -3rem;
+                    left: -2rem;
+                    font-size: 4rem;
+                    mix-blend-mode: difference;
+                
+                }
+                
+            }
+
+        
+
+            .bybyin_resume{
+                line-height: 0;
+                position: absolute;
+                left: 0;
+                bottom: -9rem;
+
+            
+                svg{
+                width: 24rem;
+                height: auto;
+                fill: white;
+                stroke: $brown;
+                stroke-width: 1rem;
+                opacity: 0.3;
+            }
+
+            }
+
+            
+        }
+        
+        }
+       
+
+        .devoted_container{
+            width: 60%;
+            padding-left: 6rem;
+            place-self: start;
+
+            h2{
+                font-size: 2rem;
+                margin-bottom: 1rem
+            }
+
+            p{
+                line-height: 2;
+            }
+
+            .download_cv{
+                @include myButton;
+                margin-top: 1rem;
+            }
+        }
+    }
+}

@@ -7,9 +7,73 @@ $contentStyle: 'Nunito Sans', sans-serif;
 $khaki: #efcbb3;
 $black: #161616;
 $brown: #bf957d;
+$maroon: #2f2228;
 $gray:  rgba(212, 204, 204, 0.815);
 $border: 1px solid $gray;
 $padding: 1rem 2rem;
 $fontSmall: 0.75rem;
 $fontMedium: 0.875rem;
 $fontLarge: 1rem;
+$letterSpace: 0.1rem;
+$textGray: rgba(99, 99, 99, 0.795);
+
+//mixin==================================
+@mixin myButton {
+  cursor: pointer;
+  background-color: $khaki;
+  z-index: 2;
+  padding: 0.75rem 1.5rem;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative; // Set position to relative
+
+  span {
+    color: $black;
+    font-weight: bold;
+    display: block;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+    position: relative;
+    z-index: 1;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    background: $brown;
+    height: 50%;
+    width: 0;
+    position: absolute;
+    transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+
+  &:before {
+    top: 0;
+    left: 0;
+    right: auto;
+  }
+
+  &:after {
+    bottom: 0;
+    right: 0;
+    left: auto;
+  }
+
+  &:hover {
+    &:before {
+      width: 100%;
+      right: 0;
+      left: auto;
+    }
+    &:after {
+      width: 100%;
+      left: 0;
+      right: auto;
+    }
+    span {
+      color: white;
+    }
+  }
+}
+
+

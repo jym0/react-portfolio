@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import '../scss/Navbar.scss';
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo.svg";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -44,11 +44,9 @@ const Navbar = () => {
       </div>
       <nav>
         <div>
-          <a href="#about">about</a>
-          <a href="#resume">resume</a>
-          <a href="#projects">projects</a>
-          <a href="#testimonials">testimonials</a>
-          <a href="#contact">contact</a>
+          <a href="#resume">Explore my journey</a>
+          <a href="#projects">my creations</a>
+          <a href="#contact">let's connect</a>
         </div>
       </nav>
     </header>
